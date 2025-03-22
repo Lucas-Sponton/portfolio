@@ -1,0 +1,59 @@
+@use "../bases/variables" as vars;
+@use "sass:map";
+
+.texto {
+    font-family: map.get(vars.$typo, dancing);
+    color: red;
+}
+
+.caja {
+    width: 250px;
+    height: 200px;
+    margin: 2px;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.color1 {
+    background: map.get(vars.$colores, negro);
+}
+
+.color2 {
+    background-color: map.get(vars.$colores, blanco);
+}
+
+.color3 {
+    background-color: map.get(vars.$colores, amarillo);
+}
+
+.color4 {
+    background-color: map.get(vars.$colores, violeta);
+}
+
+.color5 {
+    background-color: map.get(vars.$colores, cyan);
+}
+
+.color6 {
+    background-color: map.get(vars.$colores, naranja);
+}
+
+.color7 {
+    background-color: map.get(vars.$colores, azulado);
+}
+
+.color8 {
+    background-color: map.get(vars.$colores, pink);
+}
+
+
+.holagerman {
+    background-image: url("/fondo-computadora-prueba2.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}

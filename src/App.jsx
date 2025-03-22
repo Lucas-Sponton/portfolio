@@ -1,12 +1,15 @@
 import Footer from "./components/Footer"
+import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 
 function App() {
   return (
     <>
-      <NavBar />
-      <h1 className='colorCoder'>hola mundo</h1>
-      <Footer/>
+      <div className="holagerman">
+        <NavBar />
+        <Home />
+        <Footer />
+      </div>
     </>
   )
 }

@@ -1,0 +1,102 @@
+.footer-ondas {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #00378a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background:  url(/wave.png);
+        
+        background-size: 1000px 100px;
+
+    }
+    
+    #wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+        filter: hue-rotate(50deg) grayscale(100%) brightness(30%) contrast(150%) sepia(100%);
+    }
+    
+    @keyframes animateWave {
+        0% {
+            background-position-x: 1000px;
+        }
+        100% {
+            background-position-x: 0px;
+        }
+    }
+
+    #wave2 {
+        z-index: 999;
+        opacity: 0.9;
+        bottom: 10px;
+        animation: animateWave-2 4s linear infinite;
+        filter: hue-rotate(50deg) grayscale(100%) brightness(70%) contrast(200%) sepia(100%);
+    }
+
+    @keyframes animateWave-2 {
+        0% {
+            background-position-x: 0px;
+        }
+        100% {
+            background-position-x: 1000px;
+        }
+    }
+
+    #wave3 {
+        z-index: 998;
+        opacity: 0.5;
+        bottom: 15px;
+        animation: animateWave-3 3s linear infinite;
+        filter: hue-rotate(50deg) grayscale(100%) brightness(30%) contrast(150%) sepia(100%);
+    }
+
+    @keyframes animateWave-3 {
+        0% {
+            background-position-x: 1000px;
+        }
+        100% {
+            background-position-x: 0px;
+        }
+    }
+
+    #wave4 {
+        z-index: 997;
+        opacity: 0.8;
+        bottom: 20px;
+        animation: animateWave-4 3s linear infinite;
+        filter: hue-rotate(50deg) grayscale(70%) brightness(80%) contrast(100%) sepia(60%);
+    }
+
+    @keyframes animateWave-4 {
+        0% {
+            background-position-x: 0px;
+        }
+        100% {
+            background-position-x: 1000px;
+        }
+    }
+}
+
+
+.social {
+    .redes {
+        display: flex;
+        list-style: none;
+        font-size: 1.2rem;
+        
+        li {
+            margin-top: 1rem;
+        }
+    }
+}
